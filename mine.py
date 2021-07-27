@@ -38,7 +38,6 @@ class Voxel(Button):
                 if tomado == 2: voxel = Voxel(position = self.position + mouse.normal, texture = tierra)
                 if tomado == 3: voxel = Voxel(position = self.position + mouse.normal, texture = piedra)
                 if tomado == 4: voxel = Voxel(position = self.position + mouse.normal, texture = ladrillo)
-                if tomado == 5: voxel = Voxel(position = self.position + mouse.normal, texture = bedrock)
 
             if Key == 'left mouse down':
                 destroy(self)
