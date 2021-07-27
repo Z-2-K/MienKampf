@@ -3,6 +3,7 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
 
+#Todo bien pero La textura 'brazo' no carga
 pasto = load_texture('textures/pasto.jpg')
 piedra = load_texture('textures/piedra.jpg')
 tierra = load_texture('textures/tierra.jpg')
@@ -22,6 +23,7 @@ def update():
     if held_keys['3']: tomado = 3
     if held_keys['4']: tomado = 4
 
+#Todo bien #agregar bedrock
 class Voxel(Button):
     def __init__(self, position = (0,0,0), texture = pasto):
         super().__init__(
@@ -38,10 +40,12 @@ class Voxel(Button):
                 if tomado == 2: voxel = Voxel(position = self.position + mouse.normal, texture = tierra)
                 if tomado == 3: voxel = Voxel(position = self.position + mouse.normal, texture = piedra)
                 if tomado == 4: voxel = Voxel(position = self.position + mouse.normal, texture = ladrillo)
+                if tomado == 5: voxel = Voxel(position = self.position + mouse.normal, texture = bedrock)
 
             if Key == 'left mouse down':
                 destroy(self)
 
+#Todo bien #Pero debe acomodarse el cielo
 class Sky(Entity):
     def __init__(self):
         super().__init__(
@@ -75,3 +79,5 @@ sky = Sky()
 hand = Hand()
 
 app.run()
+
+#troticamente todo funciona perfectamente...
