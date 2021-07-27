@@ -1,0 +1,2 @@
+# MienKampf
+Proyecto para valletta
