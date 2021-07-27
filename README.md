@@ -3,6 +3,7 @@ This is a project that is in the beta phase of the alpha, new features will be a
 
 The controls are:
 
+
 Movement:
 
 W = Forward
@@ -13,11 +14,13 @@ D = Right
 
 S = Back
 
+
 Mouse:
 
 Right clic = Place block
 
 Left clic = Destroy block
+
 
 Choose blocks:
 
